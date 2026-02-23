@@ -1,0 +1,68 @@
+04 Example Usage (all)
+================
+
+import hashlib
+
+data = "Hello, World!"
+
+# md5-sha1
+# hash_obj = hashlib.md5-sha1(data.encode())
+# print("md5-sha1:", hash_obj.hexdigest())
+
+# md5
+hash_obj = hashlib.md5(data.encode())
+print("md5:", hash_obj.hexdigest())
+
+# SHA-256 (recommended)
+hash_obj = hashlib.sha256(data.encode())
+print("SHA-256:", hash_obj.hexdigest())
+
+# sha3_224
+hash_obj = hashlib.sha3_224(data.encode())
+print("SHA3-224:", hash_obj.hexdigest())
+
+# sha3_256
+hash_obj = hashlib.sha3_256(data.encode())
+print("SHA3-256:", hash_obj.hexdigest())
+
+# sha3_384
+hash_obj = hashlib.sha3_384(data.encode())
+print("SHA3-384:", hash_obj.hexdigest())
+
+# sha3_512
+hash_obj = hashlib.sha3_512(data.encode())
+print("SHA3-512:", hash_obj.hexdigest())
+
+# SHA-512 (recommended)
+hash_obj = hashlib.sha512(data.encode())
+print("SHA-512:", hash_obj.hexdigest())
+
+# shake_128
+hash_obj = hashlib.shake_128(data.encode())
+#print("SHAKE-128:", hash_obj.hexdigest())
+print("SHAKE-128:", hash_obj.digest(20).hex())
+
+# shake_256
+hash_obj = hashlib.shake_256(data.encode())
+#print("SHAKE-256:", hash_obj.hexdigest())
+print("SHAKE-256:", hash_obj.digest(32).hex())
+
+# blake2b
+hash_obj = hashlib.blake2b(data.encode())
+print("BLAKE2b:", hash_obj.hexdigest())
+
+#blake2s
+hash_obj = hashlib.blake2s(data.encode())
+print("BLAKE2s:", hash_obj.hexdigest())
+
+# blake3 not in main yet
+#hash_obj = hashlib.blake3(data.encode())
+#print("BLAKE3:", hash_obj.hexdigest())
+
+# ripemd160 not yet
+#hash_obj = hashlib.ripemd_160(data.encode())
+#print("ripemd160:", hash_obj.hexdigest())
+
+exit()
+
+# enter 1sec enter

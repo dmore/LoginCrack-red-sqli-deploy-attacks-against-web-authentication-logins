@@ -30,6 +30,10 @@ functions = [ login_password,
               "hashlib.sha3_256(b'%s').hexdigest()",
               "hashlib.sha3_384(b'%s').hexdigest()",
               "hashlib.sha3_512(b'%s').hexdigest()", 
+              "hashlib.shake_128(b'%s').digest(20).hex()", 
+              "hashlib.shake_256(b'%s').digest(30).hex()", 
+              "hashlib.blake2b(b'%s').hexdigest()", 
+              "hashlib.blake2s(b'%s').hexdigest()", 
               "base64.b64encode(b'%s').decode('utf-8')"
               ]
 

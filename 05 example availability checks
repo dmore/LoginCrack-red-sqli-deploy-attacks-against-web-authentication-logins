@@ -1,0 +1,10 @@
+05 example availability checks
+==============================
+
+import hashlib
+
+hashlib.algorithms_guaranteed
+print("algos guaranteed:", hashlib.algorithms_guaranteed)
+
+hashlib.algorithms_available
+print("algos available:", hashlib.algorithms_available)

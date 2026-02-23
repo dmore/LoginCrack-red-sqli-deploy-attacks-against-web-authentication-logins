@@ -38,7 +38,7 @@ hash_obj = hashlib.sha512(data.encode())
 print("SHA-512:", hash_obj.hexdigest())
 
 # shake_128
-hash_obj = hashlib.shake_128(data.encode())
+hash_obj = hashlib.shake_256(data.encode())
 #print("SHAKE-128:", hash_obj.hexdigest())
 print("SHAKE-128:", hash_obj.digest(20).hex())
 
